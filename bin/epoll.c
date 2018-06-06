@@ -1,5 +1,6 @@
 #include "epoll.h"
 #include "http_request.h"
+//添加监听事件
 void epoll_add(int epfd,http_request_t *ptr,int status)
 {
     struct epoll_event ev;
@@ -13,6 +14,7 @@ void epoll_add(int epfd,http_request_t *ptr,int status)
     }
     printf("epoll: %d  %d\n",epfd,ptr->fd);
 }
+//更改
 void epoll_mod(int epfd,http_request_t *ptr,int status)
 {
     struct epoll_event ev;
@@ -25,6 +27,7 @@ void epoll_mod(int epfd,http_request_t *ptr,int status)
         return ;
     }
 }
+//删除
 void epoll_del(int epfd,http_request_t *ptr,int status)
 {
     struct epoll_event ev;

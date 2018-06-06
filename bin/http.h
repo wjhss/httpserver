@@ -20,5 +20,6 @@
 #include "thread.h"
 
 int startup(uint16_t *server_port,int listen_num);
+//设置套接字非阻塞
 void set_sock_nonblock(int sock);
 #endif

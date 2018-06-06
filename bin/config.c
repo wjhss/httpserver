@@ -1,5 +1,5 @@
 #include "config.h"
-
+//初始化配置文件
 void http_conf_init(http_conf_t *conf)
 {
     FILE *fp = NULL;

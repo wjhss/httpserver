@@ -13,6 +13,7 @@ struct http_conf
     int evlist_num;//events 大小
 };
 typedef struct http_conf http_conf_t;
+//读入设置信息
 void http_conf_init(http_conf_t *conf);
 
 #endif
