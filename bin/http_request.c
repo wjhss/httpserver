@@ -40,7 +40,7 @@ int http_send(http_request_t *http_ptr,int epfd)
         return -1;
     }
     url_len=strlen(http_ptr->url);
-    for(int i=1;i<url_len;i++)
+    for(i=1;i<url_len;i++)
         if(http_ptr->url[i]=='.'&&http_ptr->url[i-1]=='.')
         {
             write_405(http_ptr);
