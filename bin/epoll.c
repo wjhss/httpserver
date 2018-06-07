@@ -12,7 +12,7 @@ void epoll_add(int epfd,http_request_t *ptr,int status)
         perror("epoll ctl_add fail");
         return ;
     }
-    printf("epoll: %d  %d\n",epfd,ptr->fd);
+   // printf("epoll: %d  %d\n",epfd,ptr->fd);
 }
 //更改
 void epoll_mod(int epfd,http_request_t *ptr,int status)
