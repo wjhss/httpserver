@@ -57,7 +57,7 @@ int main()
             ptr->fd=client_sock;
             set_sock_nonblock(ptr->fd);
             epoll_add(epfds[i],ptr,EPOLLIN);
-            printf("ip:%s  port: %d\n",inet_ntoa(client_addr.sin_addr),ntohs(client_addr.sin_port));
+            //printf("ip:%s  port: %d\n",inet_ntoa(client_addr.sin_addr),ntohs(client_addr.sin_port));
         }
     }
     return 0;
