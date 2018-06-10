@@ -39,6 +39,7 @@ void epoll_del(int epfd,http_request_t *ptr,int status)
         perror("epoll ctl_del fail");
         return ;
     }
+    close(ptr->fd);
     free(ptr);
 }
 

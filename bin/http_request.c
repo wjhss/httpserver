@@ -20,8 +20,8 @@ void http_recv(http_request_t *http_ptr,int epfd)
     else if(n==0)
     {
         //perror("connect close");
-        // free(http_ptr);
-        // close(socked);
+        //free(http_ptr);
+        //close(socked);
         epoll_del(epfd,http_ptr,0);
     }
     else
@@ -144,8 +144,8 @@ void judge_alive(http_request_t *http_ptr,int epfd)
     else
     {
         epoll_del(epfd,http_ptr,EPOLLOUT);
-        close(http_ptr->fd);
-        free(http_ptr);
+        //close(http_ptr->fd);
+        //free(http_ptr);
     }
 }
 
