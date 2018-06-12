@@ -1,4 +1,5 @@
 #### 一个简单的http服务器  
+```
 httpserver
     |----bin
     |     |----config.c
@@ -16,3 +17,4 @@ httpserver
     |     \----index.html
     \----config
           \http.conf
+```
